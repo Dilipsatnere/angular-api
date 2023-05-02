@@ -14,8 +14,11 @@ require('dotenv').config()
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json({extended:true}))
 app.use(
+//     cors({
+//         origin:"*"
+//     })
     cors({
-        origin:"*"
+        origin:""
     })
 )
 app.use(morgan("dev"))
