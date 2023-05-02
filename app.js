@@ -18,10 +18,10 @@ app.use(
 //         origin:"*"
 //     })
     cors({
-        origin:[
-            {"https://vast-dog-boot.cyclic.app/user"},
-            {"http://localhost:4200/signin"}
-        ]
+        origin:"https://vast-dog-boot.cyclic.app/user",
+        origin:"http://localhost:4200/signin"  
+            
+        
     })
 )
 app.use(morgan("dev"))
