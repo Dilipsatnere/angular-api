@@ -18,7 +18,7 @@ app.use(
 //         origin:"*"
 //     })
     cors({
-        origin:""
+        origin:"https://vast-dog-boot.cyclic.app/user"
     })
 )
 app.use(morgan("dev"))
