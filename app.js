@@ -18,8 +18,8 @@ app.use(
 //         origin:"*"
 //     })
     cors({
-        origin:"http://localhost:4200"; 
-        origin:"http://localhost:8080"
+        origin:["http://localhost:4200","http://localhost:8080"]
+        
        })
 )
 app.use(morgan("dev"))
